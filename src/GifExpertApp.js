@@ -25,16 +25,15 @@ const GifExpertApp = () => {
             <AddCategory setCategories={ setCategories } />
             <hr/>
 
-            <ol>
-                { 
-                    categories.map( category => {
+            { 
+                categories.map( category => {
 
-                        // return <li key={ category }> { category } </li>;
-                        //  utilizamos nuestro componente
-                        return <GifGrid key={ category } category={ category } />
-                    })
-                }
-            </ol>
+                    // return <li key={ category }> { category } </li>;
+                    //  utilizamos nuestro componente
+                    return <GifGrid key={ category } category={ category } />
+                })
+            }
+
         </Fragment>
     )
 }
