@@ -7,7 +7,7 @@ const GifExpertApp = () => {
 
 
     // const categories = ['one Punch', 'Samurai X', 'Dragon Ball'];
-    const [ categories, setCategories ] = useState(['Rick and Morty']);
+    const [ categories, setCategories ] = useState(['Corgi']);
 
 
     // const handAdd = () => {
@@ -21,20 +21,18 @@ const GifExpertApp = () => {
 
     return (
         <Fragment>
-            <h2 className="text-white mb-4">GifExpertApp</h2>
+            <h2 className="text-white mb-4">GetStickersApp</h2>
             <AddCategory setCategories={ setCategories } />
             <hr/>
 
-            <ol>
-                { 
-                    categories.map( category => {
+            { 
+                categories.map( category => {
 
-                        // return <li key={ category }> { category } </li>;
-                        //  utilizamos nuestro componente
-                        return <GifGrid key={ category } category={ category } />
-                    })
-                }
-            </ol>
+                    // return <li key={ category }> { category } </li>;
+                    //  utilizamos nuestro componente
+                    return <GifGrid key={ category } category={ category } />
+                })
+            }
         </Fragment>
     )
 }
