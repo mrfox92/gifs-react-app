@@ -32,7 +32,7 @@ export const AddCategory = ({ setCategories }) => {
         <form onSubmit={ handleSubmit }>
             <input
                 className="form-control"
-                placeholder="Buscar stickers..."
+                placeholder="Buscar gifs..."
                 type="text"
                 value={ inputValue }
                 onChange={ handleInputChange }
